@@ -1,3 +1,11 @@
+***Antes de tudo esse projeto não seria possivel sem os passo do:***
+
+https://www.powerupcloud.com/copying-objects-using-aws-lambda-based-on-s3-events-part-1/
+
+***Quero deixar meu agradecimento pelo contéudo disponível, o que fiz foi automatizar a tarefa usando o terraform***
+
+
+
 # Terraform_sync_bucket_s3
 
 ***VAMOS PROVISIONAR TUDO USANDO O:***
@@ -17,10 +25,5 @@ A próxima melhor coisa que usamos aqui - AWS Lambda! O novo mundo da computaç�
 S3 como já sabemos é o armazenamento baseado em objeto, altamente escalável e eficiente. Podemos usá-lo como fonte de dados ou mesmo como destino para vários aplicativos. O AWS Lambda, sem servidor, nos permite executar qualquer coisa sem pensar em nenhuma infraestrutura subjacente. Portanto, você pode usar o Lambda para muitos de seus trabalhos de processamento ou até mesmo para se comunicar com qualquer um de seus recursos da AWS.
 
 ## Caso de uso
-Copiar novos arquivos para um local diferente (intervalo / caminho) enquanto preserva a hierarquia. Usaremos o AWS Python SDK para resolver isso.
+Copiar novos arquivos para um local diferente (intervalo / caminho) enquanto preserva a hierarquia. Usaremos o terraform
 
-## Declaração do Problema
-
-Digamos que temos um aplicativo gravando arquivos em um caminho de bucket S3 sempre que um funcionário atualiza suas tarefas a qualquer hora do dia durante o horário de trabalho.
-
-Por exemplo, a atividade de trabalho de Ajay Muralidhar para 6 de abril de 2020, às 12h00, será armazenada em source-bucket-006 / AjayMuralidhar / 2020-04-06 / 12 / my-task.txt . Consulte a Árvore para obter mais clareza. Precisamos mover esses arquivos de tarefa para um novo intervalo, preservando a hierarquia de arquivos.
