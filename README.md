@@ -1,6 +1,6 @@
 # Terraform_sync_bucket_s3
 
-***VAMOS PROVISIONAR TUDO USANDO O:
+***VAMOS PROVISIONAR TUDO USANDO O:**
 
 ![](https://github.com/cmachadox/terraform_sync_bucket_s3/blob/master/logo-terraform.png)
 
