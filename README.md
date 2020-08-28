@@ -1,6 +1,9 @@
-# terraform_sync_bucket_s3
+# Terraform_sync_bucket_s3
 
-### Copiando objetos usando AWS Lambda com base em eventos S3 - Parte 1
+***vamos usar o terraform para provisionar esse ambiente***
+
+
+### Copiando conteúdos usando AWS Lambda com base em eventos S3
 
 ## Introdução
 
