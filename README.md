@@ -1,7 +1,8 @@
 # Terraform_sync_bucket_s3
 
-***vamos usar o terraform para provisionar esse ambiente***
+***VAMOS PROVISIONAR TUDO USANDO O:
 
+![](https://github.com/cmachadox/terraform_sync_bucket_s3/blob/master/logo-terraform.png)
 
 ### Copiando conteúdos usando AWS Lambda com base em eventos S3
 
