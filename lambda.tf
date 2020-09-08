@@ -12,17 +12,8 @@ environment {
 }
 }
 
-resource "aws_s3_bucket" "bucket" {
-bucket = var.bucket_cvm
-acl    = "private"
-tags = {
-Name        = var.bucket_cvm
-Environment = "Dev"
-}
-}
-
 resource "aws_s3_bucket_notification" "aws-lambda-trigger" {
-bucket = aws_s3_bucket.bucket.id
+bucket = aws_s3_bucket.bucketa.id
 lambda_function {
 lambda_function_arn = aws_lambda_function.prod_lambda.arn
 events              = ["s3:ObjectCreated:*"]
@@ -31,13 +22,13 @@ filter_suffix       = ""
 }
 }
 
-resource "aws_lambda_permission" "prod" {
+resource "aws_lambda_permission" "prod_lambda" {
 statement_id  = "AllowS3Invoke"
 action        = "lambda:InvokeFunction"
 
 function_name = var.s3_sync_lambda
 principal = "s3.amazonaws.com"
-source_arn = "arn:aws:s3:::${aws_s3_bucket.bucket.id}"
+source_arn = "arn:aws:s3:::${aws_s3_bucket.bucketa.id}"
 }
 
 output "arn" {

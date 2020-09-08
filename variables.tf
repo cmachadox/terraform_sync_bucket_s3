@@ -1,26 +1,27 @@
 variable "aws_region" {
   description = "Região qual sera implementanda"
-  default = "SUA REGIÂO"
-  type        = string
-}
-
-variable "nome_bucket_A" {
-  description = "Nome do bucket da Anbima"
-  default = "NOME BUCKET A"
-  type        = string
-}
-
-variable "nome_bucket_B" {
-  description = "Nome do bucket da CVM"
-  default = "NOME BUCKET B"
+  default = "us-east-1"
   type        = string
 }
 
 variable "aws_profile" {
   description = "Profil da conta"
-  default = "profile da sua conta caso precise"
+  default = "team-42"
   type        = string
 }
+
+variable "bucket_a" {
+  description = "Nome do bucket da A"
+  default = "bucket-recebimento"
+  type        = string
+}
+
+variable "bucket_b" {
+  description = "Nome do bucket B"
+  default = "bucket-destino"
+  type        = string
+}
+
 
 variable "s3_sync_role" {
   description = "Nome da Role"

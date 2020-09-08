@@ -1,6 +1,6 @@
-#--Bucket Anbima
+#--Bucket A
 
-resource "aws_s3_bucket" "bucket-a" {
+resource "aws_s3_bucket" "bucketa" {
     bucket = var.bucket_a
     acl    = "private"
     region = var.aws_region
@@ -14,9 +14,9 @@ resource "aws_s3_bucket" "bucket-a" {
 }
 
 
-#--Bucket CVM
+#--Bucket B
 
-resource "aws_s3_bucket" "bucket-b" {
+resource "aws_s3_bucket" "bucketb" {
     bucket = var.bucket_b
     acl    = "private"
     region = var.aws_region
