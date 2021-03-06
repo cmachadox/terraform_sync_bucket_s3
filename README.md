@@ -55,7 +55,7 @@ def lambda_handler(event, context):
    # Copy Source Object
    copy_source_object = {'Bucket': source_bucket_name, 'Key': file_key_name }
 
-   # Caso queira usar sem diretorio descomemtemte a linha abaixo;
+   # Caso queira usar sem diretorio descomente a linha abaixo;
    s3_client.copy_object(CopySource=copy_source_object, Bucket=destination_bucket_name, Key=file_key_name)
    
    # Caso queria usar com diretorio descomente a linha abaixo 
